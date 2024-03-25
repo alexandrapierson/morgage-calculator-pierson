@@ -2,32 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container {
+  width: 50%;
+  margin: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1 {
+  font-size: 36px;
+  margin: 50px 0px 10px 0px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.mortgage-calculator {
+  background-color: #DDD;
+  border-radius: 10px;
+  width: 90%;
+  padding: 20px 15px;
+  margin: auto;
+}
+
+form p {
+  margin: 0px 0px 10px 5px;
+  text-transform: uppercase;
+}
+
+input {
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: #AAA;
+  width: 60%;
 }
